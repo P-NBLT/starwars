@@ -1,0 +1,14 @@
+.masterContainer {
+  display: flex;
+  flex-direction: column;
+  width: max(150px, 65%);
+  row-gap: 5px;
+}
+
+.inputContainer {
+  /* width: max(150px, 65%); */
+  padding: 5px 0px;
+  /* border-radius: 15px; */
+  border: none;
+  border-bottom: 1px solid grey;
+}

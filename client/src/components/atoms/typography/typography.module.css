@@ -1,0 +1,18 @@
+.title {
+  font-size: 25px;
+}
+.subTitle {
+  font-size: 20px;
+}
+.header {
+  font-size: 18px;
+}
+.normal {
+  font-size: 16px;
+}
+.small {
+  font-size: 14px;
+}
+.bold {
+  font-weight: bold;
+}
