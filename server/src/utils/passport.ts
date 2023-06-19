@@ -32,16 +32,17 @@ export function initPassport(app) {
 }
 
 export function serializePassport() {
-  //   // Complete the serializeUser function below:
+  // Complete the serializeUser function below:
   passport.serializeUser((user, done) => {
-    done(null, user.id);
+    return done(null, {
+      id: user.id,
+      username: user.username,
+      email: user.email,
+    });
   });
 
   // Complete the deserializeUser function below:
-  passport.deserializeUser((id, done) => {
-    db.users.findUserById(id, function (err, user) {
-      if (err) done(err);
-      done(null, user);
-    });
+  passport.deserializeUser((user, done) => {
+    return done(null, user);
   });
 }
