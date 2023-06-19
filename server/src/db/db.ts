@@ -1,4 +1,6 @@
-const dataBase = [{ username: "pierre", password: "123", id: 1 }]; // value hard coded for development
+const dataBase = [{ username: "pierre", password: "123", id: 1 }];
+const starWarsTableCache = [];
+const starWarsFetchCache = {};
 
 function findUser(user, callback) {
   const result = dataBase.find((d) => d.username === user);
@@ -33,4 +35,6 @@ export const db = {
     createUser,
   },
   dataBase,
+  starWarsTableCache,
+  starWarsFetchCache,
 };
