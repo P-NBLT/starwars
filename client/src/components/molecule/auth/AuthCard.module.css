@@ -1,0 +1,18 @@
+.textContainer {
+  width: clamp(300px, 28%, 500px);
+}
+
+.bottomText {
+  display: flex;
+  column-gap: 5px;
+}
+
+.switchToSignup {
+  color: orange;
+  border-bottom: 1px solid orange;
+  width: fit-content;
+}
+
+.switchToSignup:hover {
+  cursor: pointer;
+}
