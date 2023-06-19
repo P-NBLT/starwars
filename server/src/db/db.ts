@@ -1,4 +1,4 @@
-const dataBase = [];
+const dataBase = [{ username: "pierre", password: "123", id: 1 }]; // value hard coded for development
 
 function findUser(user, callback) {
   const result = dataBase.find((d) => d.username === user);
