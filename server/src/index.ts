@@ -3,6 +3,7 @@ import cors from "cors";
 import dotenv from "dotenv";
 import bodyParser from "body-parser";
 import authRouter from "./routes/auth";
+import starWarsRouter from "./routes/starwars";
 import { initPassport, serializePassport } from "./utils/passport";
 
 dotenv.config();
@@ -18,5 +19,6 @@ serializePassport();
 
 // route
 app.use("/auth", authRouter);
+app.use("/starwars", starWarsRouter);
 
 app.listen(PORT, () => console.log(`Running on PORT ${PORT}`));
